@@ -23,6 +23,7 @@ span {
 }
 #nav-bar a {
   cursor: pointer;
+  color: inherit;
 }
 #nav-bar .logo,
 #nav-bar .mobile {
