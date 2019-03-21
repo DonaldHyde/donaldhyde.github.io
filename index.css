@@ -23,7 +23,11 @@ span {
 }
 #nav-bar a {
   cursor: pointer;
-  color: inherit;
+  color: #dedede;
+  text-decoration: none;
+}
+#nav-bar a:hover {
+  text-decoration: none;
 }
 #nav-bar .logo,
 #nav-bar .mobile {
