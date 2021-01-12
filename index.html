@@ -14,27 +14,89 @@
     <link rel="stylesheet" href="./static/css/index.css" />
   </head>
   <body>
-    <section id="hero">
-      <!-- <span>Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kelly Sikkema</a> on <a href="https://unsplash.com/s/photos/maine?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
-      <div class="scrim"></div>
-      <div class="title">
-        <h1>Donald <span>Hyde</span></h1>
-        <h2>Front-end Developer</h2>
-      </div>
-    </section>
-    <footer>
-      <a href="https://github.com/DonaldHyde" target="_blank">
-        <icon class="fab fa-github"></icon
-      ></a>
-      <a href="https://www.linkedin.com/in/donaldhyde/" target="_blank">
-        <icon class="fab fa-linkedin"></icon>
-      </a>
-      <a href="https://codepen.io/donniehyde" target="_blank">
-        <icon class="fab fa-codepen"></icon>
-      </a>
-      <a href="./static/files/donaldHydeResume.pdf" target="_blank">
-        <icon class="far fa-file-pdf"></icon>
-      </a>
-    </footer>
+    <header class="header">
+      <h1 class="header__title">
+        donald<span class="header__title--accent">hyde</span>.com
+      </h1>
+    </header>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="/">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--inactive" href="/about">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--inactive" href="/projects">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--inactive" href="/resume">Resume</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--inactive" href="/blog">Blog</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <section class="section">
+        <article class="article article--feature">
+          <img
+            class="article__image--feature"
+            src="./static/images/self.jpg"
+            alt="A handsome, well-groomed man wearing stylish sunglasses. The man is Donald Hyde."
+          />
+          <p class="article__text--feature">
+            I care about building great experiences using simple code. In
+            everything, I believe humans come first. I began my career as a
+            front-end developer in 2011 and specialize in JavaScript, HTML, CSS,
+            React, and Redux development.
+          </p>
+        </article>
+        <footer class="footer">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  class="nav__link nav__link--social"
+                  href="https://github.com/DonaldHyde"
+                  target="_blank"
+                >
+                  <icon class="fab fa-github"></icon>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link nav__link--social"
+                  href="https://www.linkedin.com/in/donaldhyde/"
+                  target="_blank"
+                >
+                  <icon class="fab fa-linkedin"></icon>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link nav__link--social"
+                  href="https://codepen.io/donniehyde"
+                  target="_blank"
+                >
+                  <icon class="fab fa-codepen"></icon>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link nav__link--social"
+                  href="./static/files/donaldHydeResume.pdf"
+                  target="_blank"
+                >
+                  <icon class="far fa-file-pdf"></icon>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+      </section>
+      <!-- <section>To Be Continued . . .</section> -->
+    </main>
   </body>
 </html>

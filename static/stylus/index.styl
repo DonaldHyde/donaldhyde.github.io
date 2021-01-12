@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body
   position absolute
@@ -8,66 +9,96 @@ body
   left 0
   right 0
   bottom 0
-  background #303030
-  color #dedede
-  font-family "Ubuntu Mono"
+  color #303030
+  font-family "Open Sans"
 
-section#hero
-  background center / contain url("../images/kelly-sikkema-AcVE-s4sATw-unsplash.jpg")
-  background-repeat no-repeat
-  background-position center
-  background-size cover
-  position absolute
-  margin 0
-  padding 0
-  top 0
+.header
+  width 500px
+  margin auto
   left 0
   right 0
-  bottom 0
-
-  .scrim
-    background #000000
-    backdrop-filter blur(5px)
-    opacity 0.7
-    position absolute
-    height 100%
-    width 100%
-
-  .title
-    position relative
-    padding 150px 0px 0px 10px
-
-    h1
-      font-size 36px
-      font-weight 400
-      margin 0 0 10px 0
-      font-family lobster
-
-      span
-        color #0a7bff
-
-    h2
-      font-size 16px
-      font-weight 400
-      margin 0
-
-footer
-  position absolute
-  bottom 0
-  left 0
-  right 0
-  height 50px
-  background #dedede
   text-align center
-  line-height 50px
 
-  a
+  &__title
+    font-size 36px
+    font-family "Ubuntu Mono"
+    margin 20px 0
+    font-weight 400
+
+    &--accent
+      color #0A7BFF
+  
+.nav
+  width 500px
+  margin auto
+  border-top 1px solid #7c7c7c
+  border-bottom 1px solid #7c7c7c
+  color #7c7c7c
+  font-size 13px
+  font-family 'Ubuntu Mono'
+
+  &__list
+    list-style none
+    width 100%
+    padding 0
+    margin 0
+    display flex
+    justify-content center
+
+  &__item
+    text-align center
+    text-transform uppercase
+    color #7c7c7c
+
+  &__link
+    color inherit
+    cursor pointer
     text-decoration none
-    color #303030
-    font-size 24px
-    margin 0 13px
+    display block
+    margin -1px 12px -1px 12px
+    padding 14px 0
+    border-top 1px solid transparent
+    border-bottom 1px solid transparent
+    letter-spacing 1px
+
+    &--social
+      font-size 18px
+      margin -1px 20px -1px 20px
+      padding 11px 0
+
+    &--inactive
+      text-decoration line-through
+      pointer-events none
+      cursor default
 
     &:hover
-      color #0a7bff
+      color #000
+      border-top 1px solid #000
+      border-bottom 1px solid #000
 
+.main
+  width 500px
+  margin auto
+  left 0
+  right 0
 
+.article
+  &--feature
+    display flex
+    align-content space-between
+    align-items top
+    padding 12px 0px
+
+  &__image--feature
+    width 125px
+    height 125px
+    padding-right 20px
+    border-right 1px solid #7c7c7c
+
+  &__text--feature
+    font-size 15px
+    margin 0
+    padding 0
+    margin-left 20px
+    line-height 25px
+    text-align justify
